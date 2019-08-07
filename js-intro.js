@@ -13,21 +13,15 @@ console.log(letter)
 
 // 1b. Write the code that determines if there is an 'x' in mantra.
 
-function determine(){
     var mantra = "Be the dev";
-    var lookFor = mantra.search("x");
-    return mantra.search("x") + " means the letter is not present"
-}
-console.log(determine("x"))
+    var lookFor = mantra.includes("x")
+console.log(lookFor)
 
 // 1c. Write the code that determines if there is a 'v' in mantra.
 
-function determine2(){
     var mantra = "Be the dev";
-    var lookFor1 = mantra.search("v");
-    return mantra.search("v") + " is the index location of the letter"
-}
-console.log(determine2("v"));
+    var lookFor1 = mantra.includes("v")
+console.log(lookFor1)
 
 // 1d. Stretch: Write a function that can take any letter as an argument and returns if it exists within the given string.
 
@@ -40,14 +34,14 @@ var myCat = "Garfield"
 
 // 2a. Create a function that returns the longer of the two variables. Expected output: "Garfield"
 
-function longerName(){
-    if (myDog.length > myCat.length) {
-         return myDog
+function longerName(dog, cat){
+    if (dog.length > cat.length) {
+         return dog
     } else if
-        (myCat.length > myDog.length)
-         return myCat
+        (cat.length > dog.length)
+         return cat
 }
-console.log(longerName())
+console.log(longerName(myDog, myCat))
 
 // // 2b. Create a function that takes in two arguments and returns an array containing the two variables. Expected output: ["Snoopy", "Garfield"]
   
